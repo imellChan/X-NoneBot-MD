@@ -73,7 +73,7 @@ async function startXNone() {
         if (!xnone.public && !mek.key.fromMe && chatUpdate.type === 'notify') return
         if (mek.key.id.startsWith('BAE5') && mek.key.id.length === 16) return
         m = smsg(xnone, mek, store)
-        require("./message/x-none")(xnone, m, chatUpdate, store)
+        require("./x-none")(xnone, m, chatUpdate, store)
         } catch (err) {
             console.log(err)
         }
